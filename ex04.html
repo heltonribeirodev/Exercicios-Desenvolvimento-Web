@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4. Botão Interativo</title>
+
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/ex04.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body id="pagina">
+
+<main>
+    <h1>4. Botão Interativo</h1>
+
+    <p id="texto">Clique para ativar o modo Jedi...</p>
+
+    <button onclick="ativarModo()" class="btn-jedi">
+        Ativar Modo Jedi ⚡
+    </button>
+
+    <a href="index.html" class="btn-voltar">
+        <i class='bx bx-left-arrow-alt'></i> Voltar
+    </a>
+</main>
+
+<script>
+    let ativo = false;
+
+    function ativarModo() {
+        const body = document.getElementById("pagina");
+        const texto = document.getElementById("texto");
+
+        if (!ativo) {
+            body.style.background = "linear-gradient(to right, #001f1f, #003333)";
+            texto.innerText = "Modo Jedi ativado! Clique para desativar!";
+        } else {
+            body.style.background = "#000";
+            texto.innerText = "Clique para ativar o modo Jedi...";
+        }
+
+        ativo = !ativo;
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+.cards {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.game-card {
+    background: #111;
+    padding: 1.5rem;
+    border-radius: 20px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255,255,255,0.05);
+    transition: 0.3s;
+}
+
+.game-card:hover {
+    transform: scale(1.03);
+}
+
+.game-card h2 {
+    margin-bottom: 10px;
+}
+
+.tipo {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+    background: #1e1e1e;
+    padding: 5px 10px;
+    border-radius: 8px;
+    color: #aaa;
+}
+
+.game-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.status {
+    text-align: left;
+}
+
+.status p {
+    font-size: 0.8rem;
+    margin: 5px 0;
+    color: #ccc;
+}
+
+.barra {
+    width: 100%;
+    height: 8px;
+    background: #222;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.vida {
+    height: 100%;
+    background: linear-gradient(to right, #00ff88, #00cc66);
+    border-radius: 10px;
+}
+
+.poder {
+    height: 100%;
+    background: linear-gradient(to right, #ff3c3c, #cc0000);
+    border-radius: 10px;
+}
+
+.vida.tony { width: 80%; }
+.poder.tony { width: 95%; }
+
+.vida.aranha { width: 85%; }
+.poder.aranha { width: 75%; }
+
+.vida.batman { width: 90%; }
+.poder.batman { width: 70%; }

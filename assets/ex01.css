@@ -1,0 +1,36 @@
+.cards {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.card {
+    background-color: #111;
+    padding: 1.5rem;
+    border-radius: 15px;
+    width: 400px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.card ul {
+    list-style: none;
+    padding: 5px;
+}
+
+.card li {
+    background-color: #222;
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 5px;
+}

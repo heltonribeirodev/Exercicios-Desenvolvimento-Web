@@ -1,0 +1,18 @@
+/* BOTÃO JEDI */
+.btn-jedi {
+    margin-top: 20px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    background: #00ffaa;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover */
+.btn-jedi:hover {
+    transform: scale(1.05);
+    background: #00db92;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8. Galeria de Personagens</title>
+
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/ex08.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+<main>
+    <h1>8. Galeria de Personagens</h1>
+
+    <!-- GALERIA -->
+    <section class="galeria">
+
+        <img src="assets/img/tonystark.jpg" onclick="mostrar('tony')">
+        <img src="assets/img/homemaranha.jpg" onclick="mostrar('aranha')">
+        <img src="assets/img/batman.webp" onclick="mostrar('batman')">
+
+    </section>
+
+    <!-- DETALHES -->
+    <div class="detalhes" id="detalhes">
+        <h2 id="nome"></h2>
+        <p id="descricao"></p>
+    </div>
+
+    <a href="index.html" class="btn-voltar">
+        <i class='bx bx-left-arrow-alt'></i> Voltar
+    </a>
+</main>
+
+<script>
+    function mostrar(personagem) {
+        const nome = document.getElementById("nome");
+        const descricao = document.getElementById("descricao");
+        const box = document.getElementById("detalhes");
+
+        if (personagem === "tony") {
+            nome.innerText = "Tony Stark";
+            descricao.innerText = "Gênio bilionário criador da armadura do Homem de Ferro.";
+        }
+
+        if (personagem === "aranha") {
+            nome.innerText = "Homem-Aranha";
+            descricao.innerText = "Herói ágil que protege Nova York com seus poderes de aranha.";
+        }
+
+        if (personagem === "batman") {
+            nome.innerText = "Batman";
+            descricao.innerText = "Vigilante de Gotham que usa estratégia e tecnologia.";
+        }
+
+        box.style.display = "block";
+    }
+</script>
+
+</body>
+</html>

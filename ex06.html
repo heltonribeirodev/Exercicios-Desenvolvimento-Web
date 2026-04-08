@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6. Quiz Geek</title>
+
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/ex06.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+<main>
+    <h1>6. Quiz Geek - Brooklyn 99</h1>
+
+    <div class="quiz">
+
+        <!-- Pergunta 1 -->
+        <div class="pergunta">
+            <p>1. Qual o nome do detetive protagonista?</p>
+            <button onclick="responder(this, true)">Jake Peralta</button>
+            <button onclick="responder(this, false)">Terry Jeffords</button>
+            <button onclick="responder(this, false)">Charles Boyle</button>
+        </div>
+
+        <!-- Pergunta 2 -->
+        <div class="pergunta">
+            <p>2. Quem é o capitão da delegacia?</p>
+            <button onclick="responder(this, true)">Raymond Holt</button>
+            <button onclick="responder(this, false)">Rosa Diaz</button>
+            <button onclick="responder(this, false)">Abutre</button>
+        </div>
+
+        <!-- Pergunta 3 -->
+        <div class="pergunta">
+            <p>3. Qual é o nome da competição anual famosa?</p>
+            <button onclick="responder(this, false)">Battle Royale</button>
+            <button onclick="responder(this, true)">Halloween Heist</button>
+            <button onclick="responder(this, false)">Nine-Nine Games</button>
+        </div>
+
+    </div>
+
+    <h2 id="resultado">Pontuação: 0</h2>
+
+    <a href="index.html" class="btn-voltar">
+        <i class='bx bx-left-arrow-alt'></i> Voltar
+    </a>
+</main>
+
+<script>
+    let pontos = 0;
+
+    function responder(botao, correto) {
+        if (botao.classList.contains("respondido")) return;
+
+        botao.classList.add("respondido");
+
+        if (correto) {
+            pontos++;
+            botao.style.background = "green";
+        } else {
+            botao.style.background = "red";
+        }
+
+        document.getElementById("resultado").innerText = "Pontuação: " + pontos;
+    }
+</script>
+
+</body>
+</html>

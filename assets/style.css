@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    color: #fff ;
+    overflow: hidden;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0; 
+    background-color: #000;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    text-align: center;
+}
+
+.links {
+    padding: 5rem;
+    display: grid;
+    grid-template-columns:repeat(4, 1fr );
+    flex-direction: row;
+    gap: 2rem;
+
+    a {
+        text-align: center;
+        padding: 3rem;
+        gap: 2rem;
+        background-color: #22229c71;
+        border-radius: 15px;
+        text-decoration: none;
+        transition: 0.5s;
+
+        &:hover {
+            transform: scale(1.07);
+        }
+    }
+}
+
+/* BOTÃO VOLTAR */
+.btn-voltar {
+    margin-top: 2rem;
+    padding: 10px 20px;
+    background-color: #22229c71;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-voltar:hover {
+    transform: scale(1.1);
+}
