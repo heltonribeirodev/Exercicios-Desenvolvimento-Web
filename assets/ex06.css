@@ -1,4 +1,3 @@
-/* QUIZ */
 .quiz {
     margin-top: 2rem;
     display: flex;
@@ -6,14 +5,12 @@
     gap: 1.5rem;
 }
 
-/* PERGUNTA */
 .pergunta {
     background: #111;
     padding: 1.5rem;
     border-radius: 15px;
 }
 
-/* BOTÕES */
 .pergunta button {
     display: block;
     width: 100%;
@@ -26,12 +23,10 @@
     transition: 0.3s;
 }
 
-/* HOVER */
 .pergunta button:hover {
     background: #333;
 }
 
-/* RESULTADO */
 #resultado {
     margin-top: 2rem;
 }

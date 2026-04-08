@@ -3,13 +3,11 @@
     width: 400px;
 }
 
-/* Lista base */
 .lista ol {
     list-style: none;
     padding: 0;
 }
 
-/* Itens */
 .lista li {
     background: #111;
     padding: 15px;
@@ -18,20 +16,17 @@
     transition: 0.3s;
 }
 
-/* Hover */
 .lista li:hover {
     transform: scale(1.03);
     background: #1a1a1a;
 }
 
-/* Episódio favorito */
 .favorito {
     border: 2px solid #4f46e5;
     background: #1e1e3f;
     box-shadow: 0 0 10px rgba(79, 70, 229, 0.5);
 }
 
-/* Número automático bonito */
 .lista li::before {
     content: counter(item);
     counter-increment: item;
@@ -40,7 +35,6 @@
     font-weight: bold;
 }
 
-/* Reset contador */
 .lista ol {
     counter-reset: item;
 }
